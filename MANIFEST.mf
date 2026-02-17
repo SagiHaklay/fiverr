@@ -1,0 +1,18 @@
+## What works
+- link generation
+- link redirection
+- global analytics
+
+## What is missing
+- Reward feature
+- tests
+
+## DB Justification
+Postgres has a very conveniant Promise-based API for node.js.
+
+## Trade-offs
+- No reward feature
+- No tests
+
+## AI prompts
+Implement a REST API for generating shareable short links for submitted target URLs and tracking them. Create an endpoint POST /links that generates a short, unique URL for a target URL and stores it in a Postgres database using @backend/src/db.ts . Requests for the same URL will return the existing URL stored in the database.
